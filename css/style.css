@@ -1,0 +1,421 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+/*Para el encabezado*/
+header{
+    position: relative;
+    width:100%;
+    height: 140px;
+    background:rgb(213, 219, 219);
+    box-shadow: 0px 0px 1em rgb(0,0,0);
+}
+header img{
+    position: absolute;
+    z-index: 5;
+    margin: 20px;
+    margin-left: 60px;
+    width: 100px;
+    height: 100px;
+    border-radius:50%;
+    box-shadow: 0em 0em 1em #48C9B0;
+    animation-delay: 0.1s;
+}
+header h2{
+    font-family: letra4;
+    font-size: 36px;
+    color: #D35400 ;
+    text-shadow: 1px 3px 0px #6b251d, 1px 13px 5px rgb(171,168,168);
+    position: absolute;
+    top: 15px;
+    left: 200px;
+    animation-delay: 0.8s;
+    animation-duration: 2s;
+}
+
+#buscar{
+  box-shadow: 0 0 2px 2px #34495E;
+  width: 300px;
+  background: #EAF2F8;
+  border-radius: 6px;
+  padding: 3px;
+  position: absolute;
+  right: 120px;
+  top:30px;
+  box-sizing: border-box;
+}
+#search{
+  background:url('/img/lupa.png') #b57905;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-size: contain;
+  border:none;
+  outline: none;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+#clave{
+  font-family: letra55;
+  font-size: 18px;
+  padding-left: 10px;
+  width: 253px;
+  border:none;
+  outline: none;
+  background: #EAF2F8;
+  height: 30px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.clave::-webkit-input-placeholder {
+    color: #BFC9CA ;
+}
+.clave::-moz-placeholder {
+    color: #BFC9CA;
+}
+.clave::-moz-placeholder {
+    color: #BFC9CA  ;
+}
+.clave::-ms-input-placeholder {
+    color: #BFC9CA  ;
+}
+
+/*parte de la seccion principal*/
+body{
+  background:#EBF5FB;
+  width: 100%;
+}
+.main{
+  min-height: 414px;
+  padding: 20px;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+  box-sizing:border-box;
+}
+.registro{
+    border:solid 1px #3498DB;
+    margin: 10px auto;
+    width: 70%;
+    background: rgb(12, 27, 46);
+    color:rgb(240, 239, 239);
+    border-radius: 15px;
+    padding: 30px;
+    box-sizing:border-box;
+    font-family: letra37;
+    font-size: 20px;
+    box-shadow: 1em 1em 1em #1B2631;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.registro2{
+    background: rgb(12, 27, 46);
+    height: 25px;
+    outline: none;
+    border: solid 1px #03a9f4;
+    padding: 10px;
+    color:rgb(236, 238, 231);
+    font-family:letra35;
+    font-size: 18px;
+}
+.form{
+  width: 49%;
+}
+/*Para el pie de pagina*/
+footer{
+    background: url('../img/textura/39.png') #5D6D7E;
+    padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+}
+.pie{
+    text-align: center;
+    margin: auto;
+    width: 40%;
+    box-sizing: border-box;
+}
+.pie h2{
+    font-family: letra51;
+    font-size:30px;
+}
+.pie a{
+    padding: 5px;
+    display: inline-block;
+    font-size: 25px;
+    background: #F8F9F9;
+    width: 36px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    color:#A93226;
+    margin: 5px;
+}
+.pie p{
+    font-family: letra58;
+    font-size: 22px;
+}
+.main .login{
+  padding: 15px;
+  text-align: center;
+  border-radius:5px;
+  width: 50%;
+  margin:10px auto;
+  border: 1px solid rgb(147, 158, 155);
+  background: rgb(236, 234, 237);
+  box-sizing: border-box;
+}
+.main .login label{
+  font-family: letra4;
+  font-size: 30px;
+  color:#C0392B;
+  font-weight: 500;
+  text-shadow: 0px 5px 1px rgba(33, 47, 60, 0.5);
+}
+.main .input{
+  outline: none;
+  font-size: 21px;
+  border-radius: 5px;
+  color:rgb(68, 70, 71);
+  border:solid 1px rgb(14, 148, 166);
+  padding: 3px;
+  box-shadow: 0px 3px 1px rgba(10, 10, 10,0.5);
+}
+#boton{
+  background: rgb(11, 136, 207);
+  font-size: 20px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: auto;
+  color:#fff;
+  border:none;
+  border-radius:2px;
+}
+.categoria,.categoria1{
+  height: 210px;
+  width: 180px;
+  padding: 10px;
+  border-radius:5px;
+  box-shadow: 0px 0px 5px 1px rgb(0,0,0);
+  background: #F2F3F4;
+  margin:15px auto;
+  border:solid 1px #AEB6BF;
+  box-sizing: border-box;
+}
+.categoria{
+    height: 180px;
+}
+.categoria:hover{
+  transform: scale(1) rotate(360deg);;
+  transition-duration: 1s;
+}
+.categoria1{
+  width: 200px;
+  margin: 15px auto;
+}
+.articulo img{
+  border-radius: 50%;
+}
+.categoria1:hover{
+  transform: scale(1.5);
+  transition-duration: 1s;
+}
+.categoria h3,.categoria1 h3{
+  text-align: center;
+}
+.categoria p,.categoria1 p{
+  font-weight: 600;
+  color: #154360;
+}
+.categoria h3 a,.categoria1 h3 a{
+  color:#4A235A;
+  text-decoration: none;
+  font-size: 26px;
+  font-family: letra51;
+}
+.articulo{
+  margin: auto;
+  width: 100px;
+  height: 100px
+}
+.articulo img{
+  width: 100%;
+  height: 100%;
+}
+.login a{
+  font-family: letra35;
+  color:rgb(18, 0, 159);
+}
+.login p{
+  color:rgb(230, 30, 17);
+}
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+.main .delete{
+  display: block;
+  width: 40px;
+  color:#000;
+  border-radius: 5px;
+  height: 40px;
+  border:none;
+  background: url('../img/garbage_78344.png');
+  background-size: contain;
+}
+#b{
+  margin: auto;
+  background: #F4F6F7;
+  border-radius: 5px;
+  border:1px solid rgb(90, 91, 90);
+  display: flex;
+  flex-flow: row wrap;
+  box-sizing: border-box;
+}
+.mas, .menos{
+  padding: 4px;
+  background: #D0D3D4;
+  width: 17px;
+}
+.mas{
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-left:1px solid rgb(90, 91, 90);
+}
+.menos{
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-right:1px solid rgb(90, 91, 90);
+}
+.main #b input{
+  width: 100%;
+  background: #D0D3D4;
+  font-family: letra5;
+  font-size: 22px;
+  color:rgb(14, 40, 153);
+  text-decoration: none;
+  margin:auto;
+  border:none;
+}
+ #b p{
+   padding: 6px 2px;
+   font-family: letra5;
+   width: 30px;
+   color:rgb(0,0,0);
+   font-size: 16px;
+   box-sizing: border-box;
+ }
+.compra{
+  padding: 25px;
+  width: 100%;
+  background: #FBFCFC;
+  border-radius: 4px;
+  margin:10px auto;
+  box-sizing: border-box;
+}
+.compra p{
+  font-family: letra26;
+  font-weight: bold;
+  color:rgb(80, 0, 0);
+}
+.articulo1{
+  margin: 10px auto;
+  width:80%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+#articulo1{
+  width: 50%;
+  float: left;
+  display: flex;
+  box-sizing: border-box;
+}
+.compra h2{
+  color:rgb(213, 0, 0);
+  font-family:letra26;
+  font-weight: bold;
+  font-size:22px;
+  line-height: 3  0px;
+}
+/*-----------------------------------------------Estulos del aside------------------------------------------------------------------------------------------------*/
+#contenedor{
+  width: 100%;
+  margin: 10px auto;
+  padding: 10px;
+  position: relative;
+  box-sizing: border-box;
+}
+#contenedor aside{
+  float: left;
+  display: block;
+  border-radius: 4px;
+  margin: 20px 0 0 30px;
+  box-shadow: 0px 0px 5px 1px rgb(0,0,0);
+  background:#F2F3F4;
+  width: 20%;
+  padding: 10px;
+}
+#contenedor h1{
+  color:#922B21;
+  font-size: 26px;
+  font-family: letra8;
+  text-align: center;
+}
+aside a{
+  color:#145A32;
+  display: block;
+  font-weight: 300;
+  font-size: 20px;
+  text-align: justify;
+  text-decoration: none;
+}
+aside1 {
+  width:90%;
+  margin:auto;
+  display:block;
+  box-sizing:border-box;
+  text-align: justify;
+
+}
+#contenedor .main h2{
+  text-align: center;
+  font-family: letra4;
+  color:#145A32;
+  font-size: 30px;
+}
+#contenedor .main p{
+  font-size: 22px;
+  color:#4A235A;
+  font-weight: 100;
+}
+#contenedor .main .dos{
+  margin: 30px;
+  display: flex;
+  box-shadow: 0px 0px 5px 1px rgb(0,0,0);
+  background:#F2F3F4;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.dos article{
+  text-align: justify;
+  padding: 30px;
+}
+.section{
+  text-align: justify;
+  width: 94%;
+  padding: 30px;
+  border-radius: 4px;
+  margin: 5px auto;
+  box-shadow: 0px 0px 5px 1px rgb(0,0,0);
+  background:#F2F3F4;
+  box-sizing: border-box;
+}
+.pago{
+  border:dashed #000 1px;
+  padding: 0 20px;
+  border-radius:10px;
+  box-sizing: border-box;
+}
+.pago img{
+  width: 100%;
+  height: auto;
+}
